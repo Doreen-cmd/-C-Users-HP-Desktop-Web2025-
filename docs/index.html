@@ -6,33 +6,58 @@
     <title>Beyond The Cow</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+      .hero {
+        background-color: var(--white) !important;
+        background-image: none !important;
+        padding: 2rem 0;
+        overflow: visible;
+      }
+      .hero::before {
+        display: none !important;
+      }
+      .hero-content h1,
+      .hero-content p {
+        color: var(--text-color) !important;
+        text-shadow: none;
+      }
+      .hero .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+      .hero-image {
+        flex: 0.3;
+        height: 350px;
+        overflow: hidden;
+      }
+      .hero-image img {
+        width: auto;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+      .hero-content {
+        flex: 0.4;
+        text-align: center;
+        padding: 1rem;
+        max-width: 900px;
+      }
+    </style>
 </head>
 <body>
-     <header>
-    <div class="logo">
-      <img src="c:\Users\HP\Documents\WhatsApp Image 2025-07-03 at 20.12.41_74ac9d97.jpg" alt="Logo" height="100" width="100" />
-      <div class="title">
-        <h1><b>BEYOND THE COW</b></h1>
-        <p>Here to improve your experience in using technology in farming</p>
-      </div>
-    </div>
- 
-
     <header>
         <div class="container">
             <div class="logo">
-                <a href="index.html">
-                    <i class=""></i> Beyond the cow
-                </a>
+                <a href="index.html"><i class="" src="images/whatsapp image .jpg"></i> Beyond the cow</a>
             </div>
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html" class="active">Home</a></li>
-                     <li><a href="about.html">About</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
-                    
                     <li><a href="doctors.html">Highlights</a></li>
-                   
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
                 <div class="hamburger">
@@ -43,22 +68,23 @@
             </nav>
         </div>
     </header>
-
     <section class="hero">
         <div class="container">
+            <div class="hero-image">
+                <img src="images/bg.jpeg" alt="Agriculture close-up">
+            </div>
             <div class="hero-content">
                 <h1><b>AGRICULTURE BE A TOOL FOR JOB CREATION</b></h1>
                 <p><b>Beyond The Cow is dedicated to connecting the unemployed youth of Nyagatare district to modernized agricultural practices and potential employers in the agricultural field. Join us in our mission to revolutionize the future of agriculture by providing valuable experience and opportunities to the youth.</b></p>
-                
                 <div class="hero-buttons">
-                   
                     <a href="contact.html" class="btn btn-secondary">Contact Us</a>
                 </div>
             </div>
+            <div class="hero-image">
+                <img src="images/image 5.jpg" alt="Drone over field">
+            </div>
         </div>
     </section>
-
- 
 
     <section class="services-preview">
         <div class="container">
@@ -68,28 +94,19 @@
             </div>
             <div class="services-grid">
                 <div class="service-card animate-on-scroll">
-                    <img src="images/IMG 6.jpg"weight="500" height="450" alt="General Health Checkup">
-                    
-                   
+                    <img src="images/IMG 6.jpg" weight="500" height="450" alt="General Health Checkup">
                     <a href="services.html#general-checkup" class="read-more">Learn More</a>
                 </div>
                 <div class="service-card animate-on-scroll">
                     <img src="images/26.webp" alt="Specialized Treatment">
-                   
-                  
                     <a href="services.html#specialized-treatment" class="read-more">Learn More</a>
                 </div>
-                
-               
             </div>
             <div class="view-all">
                 <a href="services.html" class="btn btn-outline">View All Services</a>
             </div>
         </div>
     </section>
-
-    <!-- Stats Section -->
- 
 
     <section class="why-choose-us">
         <div class="container">
@@ -101,34 +118,25 @@
                 <div class="feature animate-on-scroll">
                     <i class="fas fa-star"></i>
                     <h3>MODERN AGRICULTURE PRACTICES</h3>
-                    
-                    <p>
-
-Our programs are designed to provide the youth with hands-on experience in modern agricultural techniques, promoting sustainability and efficiency in crop production..</p>
+                    <p>Our programs are designed to provide the youth with hands-on experience in modern agricultural techniques, promoting sustainability and efficiency in crop production.</p>
                 </div>
                 <div class="feature animate-on-scroll">
                     <i class="fas fa-line"></i>
                     <h3>AGRICULTURE MACHINERY SOLUTIONS</h3>
-                    
                     <p>We offer access to a wide range of agricultural machinery such as tractors, plowers, irrigation systems, and more, enabling farmers to optimize their resources and improve productivity.</p>
                 </div>
                 <div class="feature animate-on-scroll">
                     <i class="fas fa-circle"></i>
                     <h3>EMPLOYER CONNECTIONS</h3>
-                    <p>Beyond The Cow facilitates connections between the youth and potential employers in the agricultural field, creating opportunities for valuable work experience and career growth.
-
-</p>
+                    <p>Beyond The Cow facilitates connections between the youth and potential employers in the agricultural field, creating opportunities for valuable work experience and career growth.</p>
                 </div>
-                <section>
                 <div class="feature animate-on-scroll">
                     <i class="fas fa-scroll"></i>
-                    <h3><b>EMPOWERING THE YOUTH FOR A SUSTAINABLE FUTURE </b></h3>
-                    <p>
-From gaining practical knowledge in modern agricultural methods to accessing agricultural machinery and connecting with potential employers, we empower the youth with the tools and opportunities to contribute to a sustainable and productive agricultural sector.</p>
+                    <h3><b>EMPOWERING THE YOUTH FOR A SUSTAINABLE FUTURE</b></h3>
+                    <p>From gaining practical knowledge in modern agricultural methods to accessing agricultural machinery and connecting with potential employers, we empower the youth with the tools and opportunities to contribute to a sustainable and productive agricultural sector.</p>
                 </div>
             </div>
         </div>
-        </section>
     </section>
 
     <section class="testimonials">
@@ -141,29 +149,19 @@ From gaining practical knowledge in modern agricultural methods to accessing agr
                 <div class="testimonial">
                     <div class="testimonial-content">
                         <p>"The experience I had with the BIG 5 was exceptional. The team were was friendly and cooperative."</p>
-                        <div class="testimonial-author">
-                           
-                            </div>
-                        </div>
+                        <div class="testimonial-author"></div>
                     </div>
                 </div>
                 <div class="testimonial">
                     <div class="testimonial-content">
                         <p>"It was great working with the BIG 5"</p>
-                        <div class="testimonial-author">
-                           
-                            </div>
-                        </div>
+                        <div class="testimonial-author"></div>
                     </div>
                 </div>
                 <div class="testimonial">
                     <div class="testimonial-content">
                         <p>"I'm grateful for their expertise and compassionate work."</p>
-                        <div class="testimonial-author">
-                            
-                               
-                            </div>
-                        </div>
+                        <div class="testimonial-author"></div>
                     </div>
                 </div>
             </div>
@@ -204,7 +202,7 @@ From gaining practical knowledge in modern agricultural methods to accessing agr
                         <li><a href="services.html">Services</a></li>
                         <li><a href="doctors.html">Highlights</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                         <li><a href="appointment.html">Book Appointment</a></li>
                     </ul>
                 </div>
@@ -214,7 +212,6 @@ From gaining practical knowledge in modern agricultural methods to accessing agr
                     <p><i class="fas fa-phone"></i> + 250 782 280 204</p>
                     <p><i class="fas fa-envelope"></i> thebigfive68@gmail.com</p>
                     <p><i class="fas fa-clock"></i> Mon-Thu: 8:00 AM - 5:00 PM</p>
-                    
                 </div>
             </div>
             <div class="footer-bottom">
